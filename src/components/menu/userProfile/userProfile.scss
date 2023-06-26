@@ -1,0 +1,22 @@
+.userProfile {
+  color: #ffffff;
+  min-width: 84px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding:25px 31px;
+
+  &__init{
+    font-size: 16px;
+    padding: 7px 11px;
+    font-weight: 600;
+    border-radius: 2px;
+    background: #5360CD;
+
+  }
+  &__full-name{
+    font-size: 16px;
+    font-weight: 600;
+  }
+}

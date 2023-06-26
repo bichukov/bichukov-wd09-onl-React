@@ -1,0 +1,16 @@
+.btn{
+  padding-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+
+  &--primary{
+    background-color: #0d81a1;
+    color: #ffffff;
+  }
+  &--dangery{
+    background-color:red;
+    color: #000000;
+  }
+}

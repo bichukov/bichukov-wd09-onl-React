@@ -1,0 +1,35 @@
+p{
+  margin: 0;
+  padding: 0;
+}
+.tabs {
+  padding: 20px;
+
+  &-wrap{
+    display: flex;
+    gap: 40px;
+
+  }
+
+
+    &-wrap-tab{
+      padding: 24px 40px;
+      cursor: pointer;
+
+  }
+  &-active{
+    border-bottom: 2px solid #313037;;
+
+  }
+  &-wrap-tab-title{
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+  }
+}
+.tabs-wrap-tab:hover,
+.tabs-wrap-tab:focus{
+  border-bottom: 2px solid #313037;;
+
+}
