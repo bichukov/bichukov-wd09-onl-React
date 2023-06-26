@@ -1,38 +1,30 @@
 import './Tabs.scss'
-import React, {useRef} from "react";
+import React, { useState } from "react";
 
+export function Tabs() {
+    const arr = [
+        { id: 0, title: 'all'},
+        { id: 1, title: 'My favorites' },
+        { id: 2, title: 'Popular' },
+    ];
 
-const Tabs = () => {
-    const list = document.querySelectorAll('.tabs-wrap-tab');
+    const [activeIndex, setActiveIndex] = useState(0);
 
-    const handleClick = (e) => {
-        const clickedTab = e.currentTarget;
-        list.forEach(item => {
-            item.addEventListener('click', handleClick);
-        });
-        list.forEach(item => {
-            item.classList.remove('tabs-active');
-        });
-        clickedTab.classList.add('tabs-active');
-    };
-
-
+    const results = []
+    arr.forEach((el, index) => {
+        results.push(
+            <div key={el.id} index={index} className={activeIndex === index ? 'tabs-wrap-tab tabs-active' : 'tabs-wrap-tab'}  onClick={() => setActiveIndex(index)}>
+                <p className='tabs-wrap-tab-title'>{el.title}</p>
+            </div>
+        );
+    });
 
     return (
         <div className="tabs">
             <div className="tabs-wrap">
-                <div className="tabs-wrap-tab tabs-active" onClick={handleClick}>
-                    <p className="tabs-wrap-tab-title">All</p>
-                </div>
-                <div className="tabs-wrap-tab" onClick={handleClick}>
-                    <p className="tabs-wrap-tab-title">My favorites</p>
-                </div>
-                <div className="tabs-wrap-tab" onClick={handleClick}>
-                    <p className="tabs-wrap-tab-title">Popular</p>
-                </div>
+                {results}
             </div>
         </div>
-    );
-};
-
+    )
+}
 export default Tabs;
