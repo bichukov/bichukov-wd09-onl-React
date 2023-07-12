@@ -1,5 +1,4 @@
 
-
 .post-item__container-middle {
   display: flex;
 
@@ -9,8 +8,9 @@
   &-cell:nth-child(-n+2) {
     margin-top: 0;
   }
-    &-cell {
-      margin-top: 40px;
+
+  &-cell {
+    margin-top: 40px;
     flex: 1 0 50%;
 
     max-width: calc(50% - 16px);
@@ -38,6 +38,7 @@
     }
   }
 }
+
 .under-line-middle {
   width: 100%;
 

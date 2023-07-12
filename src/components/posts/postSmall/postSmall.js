@@ -1,7 +1,6 @@
-
 import './postSmall.scss'
 
-const PostSmall = ({ posts, setPosts }) => {
+const PostSmall = ({posts, setPosts}) => {
     return (
         <div className="post-item__container30">
             {posts.slice(6, 12).map(item => (
