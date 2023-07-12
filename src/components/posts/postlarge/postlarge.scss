@@ -1,0 +1,65 @@
+
+
+.post-item__container-large {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &-description {
+
+    width: 100%;
+    max-width: 450px;
+
+
+    &-date {
+
+      font-size: 16px;
+    }
+
+    &-title {
+
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 44px;
+      margin: 8px 0 24px
+    }
+
+    &-text {
+
+      font-size: 16px;
+    }
+  }
+
+  &-image {
+    width: 256px;
+    height: 244px;
+  }
+
+  &-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &-marks {
+      display: flex;
+      gap: 24px;
+
+      &-like {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+        &-count {
+
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+.under-line {
+  width: 100%;
+  color: #DADADA;
+}
